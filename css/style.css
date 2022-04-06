@@ -1,0 +1,90 @@
+/*
+
+Colours used:
+#A73E00
+#252525
+#376046
+
+*/
+
+body {
+  background-color: #376046;
+  font-family: rigid-square, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: ivypresto-display, serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 64px;
+}
+
+h2 {
+  font-family: rigid-square, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: rigid-square, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.button {
+  font-weight: 300;
+  padding: 16px;
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.cv-button {
+  text-decoration: underline;
+}
+
+.cv-button:hover {
+  text-decoration: none;
+}
+
+.cv-button:active {
+  text-decoration: none;
+}
+
+.cv-button:active {
+  text-decoration: none;
+}
