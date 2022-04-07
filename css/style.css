@@ -16,16 +16,17 @@ body {
   font-family: rigid-square, sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 20px;
+  font-size: 16px;
   color: #ffffff;
 }
-
 
 /* Header */
 
 header {
   box-shadow: 0px 4px 4px 0px rgba(17, 39, 25, 0.5);
   position: relative;
+  display: inline-block;
+  width: 100%;
 }
 
 nav {
@@ -69,10 +70,11 @@ nav > ul > li > a:focus {
   padding: 16px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 #hero h1 {
-  text-align: center;
+  line-height: 1.2;
 }
 
 .container {
@@ -84,6 +86,12 @@ nav > ul > li > a:focus {
   margin: 32px 0;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #work .row {
   padding-bottom: 24px;
   border-bottom: 1px solid #ffffff;
@@ -93,14 +101,14 @@ h1 {
   font-family: ivypresto-display, serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 64px;
+  font-size: 52px;
 }
 
 h2 {
   font-family: rigid-square, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 200;
   text-transform: uppercase;
 }
@@ -109,7 +117,7 @@ h3 {
   font-family: rigid-square, sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 a {
@@ -170,11 +178,51 @@ img {
 /* Footer */
 
 .social-icons {
-  height: 24px;
+  height: 40px;
   width: auto;
 }
 
 #socials ul {
   list-style-type: none;
   padding: 0;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+/* ==============================
+Medium devices (640px and larger)
+============================== */
+@media only screen and (min-width:640px) {
+  header {
+    padding: 16px 0 16px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+}
+
+/* ==============================
+Large devices (1024px and larger)
+============================== */
+@media only screen and (min-width:1024px) {
+
+}
+
+/* ===============================
+X-Large device (1440px and larger)
+=============================== */
+@media only screen and (min-width:1440px) {
+
 }
