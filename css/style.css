@@ -30,6 +30,7 @@ header {
   box-shadow: 0px 4px 4px 0px rgba(17, 39, 25, 0.5);
   position: relative;
   width: 100%;
+  padding: 8px 0;
 }
 
 .name-role {
@@ -37,17 +38,10 @@ header {
   display: block;
 }
 
-nav {
-  display: inline-block;
-}
-
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -69,6 +63,54 @@ nav > ul > li > a:focus {
   text-decoration: none;
   background-image: linear-gradient(transparent 50%, #820000 0%);
 }
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: -2px;
+  font-size: 20px;
+  padding-right: 0px;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive li {
+  display:block;
+  padding: 4px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.navtoggle.responsive a {
+  text-decoration: none;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 8px;
+}
+
+/*
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+*/
 
 /* Main */
 
@@ -145,6 +187,10 @@ a:focus {
   text-decoration: none;
 }
 
+/* a .name-role div {
+  text-decoration: none;
+} */
+
 img {
   width: 100%;
 }
@@ -206,6 +252,7 @@ svg {
   float: left;
   padding: 10px;
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ============================== */
@@ -218,6 +265,23 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: -40px;
+  }
+
+  nav > ul {
+    padding: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+   .navtoggle li:last-child {
+    display: none;
   }
 
   .col-md-6 {
