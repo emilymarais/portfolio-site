@@ -6,7 +6,6 @@ Colours used:
 #376046
 
 */
-
 * {
   box-sizing: border-box;
 }
@@ -21,13 +20,12 @@ body {
   font-weight: 200;
   font-style: normal;
   font-size: 16px;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Header */
-
 header {
-  box-shadow: 0px 4px 4px 0px rgba(17, 39, 25, 0.5);
+  box-shadow: 0 4px 4px 0 rgba(17, 39, 25, 0.5);
   position: relative;
   width: 100%;
   padding: 8px 0;
@@ -57,12 +55,28 @@ nav > ul > li > a:hover {
 
 nav > ul > li > a:active {
   text-decoration: none;
-  background-image: linear-gradient(transparent 50%, #820000 0%);
+  background-image: linear-gradient(transparent 50%, #400000 0%);
 }
 
 nav > ul > li > a:focus {
   text-decoration: none;
-  background-image: linear-gradient(transparent 50%, #820000 0%);
+  background-image: linear-gradient(transparent 50%, #400000 0%);
+}
+
+#hamburger {
+  background-image: none;
+}
+
+#hamburger: hover {
+  background-image: none;
+}
+
+#hamburger: active {
+  background-image: none;
+}
+
+#hamburger: focus {
+  background-image: none;
 }
 
 .navtoggle li .icon {
@@ -70,10 +84,11 @@ nav > ul > li > a:focus {
   right: 0;
   top: -2px;
   font-size: 20px;
-  padding-right: 0px;
+  padding-right: 0;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -82,9 +97,9 @@ nav > ul > li > a:focus {
 }
 
 .navtoggle.responsive li {
-  display:block;
+  display: block;
   padding: 16px 4px;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .navtoggle.responsive a {
@@ -95,42 +110,26 @@ nav > ul > li > a:focus {
   padding: 24px 0 8px;
 }
 
-/*
-
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
-
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
-}
-
-*/
-
 /* Main */
-
 #hero {
-  background-color: rgba(20,20,20,0.5);
-  padding: 16px 0;
+  background-color: rgba(20, 20, 20, 0.5);
+  padding: 0;
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 
 #hero h1 {
-  line-height: 1.2;
+  line-height: 1.1;
+}
+
+#hero h1 span {
+  font-size: 24px;
 }
 
 .container {
   padding: 0 8px;
 }
-
 
 .row {
   margin: 32px 0;
@@ -144,14 +143,14 @@ nav > ul > li > a:focus {
 
 #work .row {
   padding-bottom: 24px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #fff;
 }
 
 h1 {
   font-family: ivypresto-display, serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 52px;
+  font-size: 48px;
 }
 
 h2 {
@@ -159,7 +158,6 @@ h2 {
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
-  font-weight: 200;
   text-transform: uppercase;
 }
 
@@ -171,12 +169,12 @@ h3 {
 }
 
 a {
-  text-decoration: underline;
-  color: #ffffff;
+  text-decoration: none;
+  color: #fff;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   background-image: linear-gradient(transparent 50%, #820000 0%);
 }
 
@@ -191,7 +189,6 @@ a:focus {
 /* a .name-role div {
   text-decoration: none;
 } */
-
 img {
   width: 100%;
 }
@@ -206,7 +203,7 @@ svg {
   padding: 16px;
   margin: 24px 0;
   border-radius: 4px;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   text-decoration: none;
   text-align: center;
   display: block;
@@ -216,7 +213,7 @@ svg {
 
 .button:hover {
   color: #376046;
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: none;
   font-weight: 400;
 }
@@ -238,7 +235,6 @@ svg {
 }
 
 /* Footer */
-
 .social-icons {
   height: 40px;
   width: auto;
@@ -263,9 +259,9 @@ svg {
 /* ==============================
 Medium devices (640px and larger)
 ============================== */
-@media only screen and (min-width:640px) {
+@media only screen and (min-width: 640px) {
   header {
-    padding: 16px 0 16px;
+    padding: 16px 0;
   }
 
   nav {
@@ -282,12 +278,11 @@ Medium devices (640px and larger)
     display: inline-block;
   }
 
-
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
 
-   .navtoggle li:last-child {
+  .navtoggle li:last-child {
     display: none;
   }
 
@@ -303,50 +298,57 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px and larger)
 ============================== */
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.333%;
+  }
 
-   .col-lg-7 {
-     width: 58.333%;
-   }
+  .col-lg-5 {
+    width: 41.666%;
+  }
 
-   .col-lg-5 {
-     width: 41.666%;
-   }
-
-   .container {
-     padding: 0 0px;
-     max-width: 1200px;
-     margin-left: auto;
-     margin-right: auto;
-   }
-
+  .container {
+    padding: 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ===============================
 X-Large device (1440px and larger)
 =============================== */
-@media only screen and (min-width:1440px) {
 
-}
+/* @media only screen and (min-width:1440px) {} */
 
 /* ===============================
 Animations
-================================*/
-
+================================ */
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #376046;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #376046;
+  }
 }
 
 @keyframes rotation {
-  50% {transform: rotate(180deg);}
+  50% {
+    transform: rotate(180deg);
+  }
 }
 
 @keyframes test {
-  from {fill: #000000;}
-  to {fill: #ffffff;}
-}
+  from {
+    fill: #000;
+  }
 
+  to {
+    fill: #fff;
+  }
+}
 
 .white-bubble {
   animation: 2s color-change infinite alternate linear;
@@ -361,7 +363,7 @@ Animations
   animation: 3s color-change infinite alternate linear;
 }
 
-.flag1 {}
+/* .flag1 {} */
 
 .unk {
   animation: 2s test infinite alternate linear;
